@@ -8,10 +8,10 @@ chrome.action.onClicked.addListener(tab => {
 });
 
 function contentEdx(){
-    document.evaluate(nextBtnXpath,document,null, XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.click();
+    getElementByXpath(nextBtnXpath).click();
 }
 
 function getElementByXpath(xpath) {
-
+    return document.evaluate(xpath,document,null, XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue;
 }
 
