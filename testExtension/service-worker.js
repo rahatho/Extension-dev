@@ -11,3 +11,7 @@ function contentEdx(){
     document.evaluate(nextBtnXpath,document,null, XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.click();
 }
 
+function getElementByXpath(xpath) {
+
+}
+
